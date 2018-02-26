@@ -1,17 +1,7 @@
 MySQL
 Getting started:
 
-http://www.sqlteaching.com/
-https://www.codecademy.com/courses/learn-sql
-Related tutorials:
 
-MySQL-CLI
-Analyzing Business Metrics
-SQL joins infografic
-Tools:
-
-DataGrip
-Sequel Pro
 Commands
 Access monitor: mysql -u [username] -p; (will prompt for password)
 
@@ -120,3 +110,9 @@ Grant ALL access to user for * tables: GRANT ALL ON database.* TO 'user'@'localh
 
 Find out the IP Address of the Mysql Host
 SHOW VARIABLES WHERE Variable_name = 'hostname'; (source)
+
+ bash_profile
+alias mysql=/Applications/MAMP/Library/bin/mysql
+ my.cnf
+[mysqld]
+max_allowed_packet=64M
